@@ -4,6 +4,7 @@ import ProductCard from '@/components/ProductCard'
 import { makeServer } from '@/miragejs/server'
 
 const mountProductCard = () => {
+  let server
   const product = server.create('product', {
     title: 'Relógio Bonito',
     price: '22.00',
